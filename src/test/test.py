@@ -1,5 +1,5 @@
 from advent import io
-from advent.puzzle import day01, day02, day03, day04, day05, day06, day07
+from advent.puzzle import day01, day02, day03, day04, day05, day06, day07, day08
 
 
 def test_day01():
@@ -62,3 +62,11 @@ def test_day07():
     assert result == 95437
     result = day07.Puzzle.resolve_part_02(data)
     assert result == 24933642
+
+
+def test_day08():
+    data = io.read("day08_test01.txt")
+    result = day08.Puzzle.resolve_part_01(data)
+    assert result == 21
+    result = day08.Puzzle.resolve_part_02(data)
+    assert result == 8
